@@ -1,0 +1,33 @@
+# Hands-On Explainable AI: pinned Colab requirements
+#
+# One-cell install (upload this file to your Colab session first):
+#
+#     %pip install -q -r requirements-colab.txt
+#
+# These are the exact versions the book's committed results were produced with
+# (resolved from the project's uv.lock). Each notebook also carries its own
+# smaller pinned %pip cell; this file is the everything-at-once alternative.
+#
+# NOTE: numpy 1.26.4 is older than Colab's preinstalled NumPy 2.x. Pip will
+# downgrade it and Colab may prompt for a runtime restart. Restart and re-run.
+
+accelerate==1.14.0
+bertviz==1.4.1
+captum==0.9.0
+datasets==3.6.0
+faiss-cpu==1.14.3
+lime==0.2.0.1
+matplotlib==3.11.1
+numpy==1.26.4
+pandas==3.0.3
+peft==0.19.1
+sae-lens==6.5.3
+scikit-learn==1.9.0
+shap==0.49.1
+transformer-lens==2.9.0
+transformers==4.57.6
+
+# torch is deliberately NOT pinned: Colab ships a CUDA-matched torch build,
+# and reinstalling torch==2.13.0 from PyPI would fight Colab's CUDA setup
+# (long download, possible driver mismatch). Use Colab's preinstalled torch.
+# torch==2.13.0

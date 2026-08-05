@@ -1,0 +1,56 @@
+[project]
+name = "ai-book"
+version = "0.1.0"
+description = "Build environment for Hands-On Explainable AI"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+    "scikit-learn>=1.5",
+    "jupyter>=1.1",
+    "ipykernel>=6.29",
+    "nbclient>=0.10",
+    "nbformat>=5.10",
+    "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.6",
+    "nbqa>=1.9",
+]
+# Heavy ML stack — installed on demand: `make setup-ml`
+llm = [
+    "torch>=2.4",
+    "transformers>=4.44",
+    "datasets>=2.20",
+    "accelerate>=0.34",
+    "shap>=0.46",
+    "lime>=0.2.0.1",
+    "captum>=0.7",
+    "bertviz>=1.4",
+    "inseq>=0.6",
+    "peft>=0.12",
+    "faiss-cpu>=1.8",
+]
+# transformer-lens / sae-lens pin their own transformers ranges;
+# kept in a separate group so chapter 10 work can resolve independently
+mechinterp = [
+    "transformer-lens>=2.0",
+    "sae-lens>=4.0",
+]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint.per-file-ignores]
+# Tutorial notebooks import libraries in the cell that teaches them, on purpose
+"*.ipynb" = ["E402", "E501", "E702"]
+
+[tool.nbqa.addopts]
+ruff = ["--extend-ignore=E402,E501,E702"]

@@ -1,0 +1,35 @@
+# Matplotlib house style — Hands-On Explainable AI
+# Palette (keep in sync with styles/book.scss and styles/preamble.tex):
+#   ink #1A1C1E | rust #9A3412 (model/computation) | teal #0D9488 (explanation/human)
+#   amber #F59E0B | rose #E11D48 | stone #A8A29E (neutral series) | graphite #57534E (secondary text)
+#   No blue or purple anywhere: the warm/cool split carries the model-vs-human meaning.
+
+figure.facecolor: white
+# 200 dpi so notebook-embedded PNGs stay at or above 200 effective ppi in the
+# print PDF (survey 2026-07-29: 120 dpi left ten figures at 120-149 ppi).
+figure.dpi: 200
+savefig.bbox: tight
+savefig.facecolor: white
+
+font.family: sans-serif
+font.sans-serif: Source Sans 3, Helvetica Neue, Arial, DejaVu Sans
+font.size: 11
+
+axes.prop_cycle: cycler('color', ['9A3412', '0D9488', 'F59E0B', 'E11D48', 'A8A29E', '1A1C1E'])
+axes.edgecolor: 1A1C1E
+axes.labelcolor: 1A1C1E
+axes.titlesize: 12
+axes.titleweight: bold
+axes.spines.top: False
+axes.spines.right: False
+axes.grid: True
+
+grid.color: E7E5E4
+grid.linewidth: 0.6
+
+xtick.color: 1A1C1E
+ytick.color: 1A1C1E
+
+legend.frameon: False
+
+svg.fonttype: none

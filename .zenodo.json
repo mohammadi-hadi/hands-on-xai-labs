@@ -1,0 +1,20 @@
+{
+  "title": "Hands-On XAI Labs: companion notebooks for Hands-On Explainable AI",
+  "description": "Thirteen executed Colab lab notebooks on interpreting, evaluating, and trusting large language models: feature attribution, attention analysis, probing, chain-of-thought faithfulness, mechanistic interpretability, behavioral auditing, explanation-aware training, and production explainability. Each lab runs on a free-tier Colab T4 GPU in twenty minutes or less, with fixed seeds. Companion repository for the book Hands-On Explainable AI (Hadi Mohammadi).",
+  "creators": [
+    {
+      "name": "Mohammadi, Hadi",
+      "affiliation": "Utrecht University"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "keywords": [
+    "explainable AI",
+    "interpretability",
+    "large language models",
+    "feature attribution",
+    "mechanistic interpretability",
+    "LLM evaluation"
+  ]
+}

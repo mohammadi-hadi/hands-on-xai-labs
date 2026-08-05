@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use these labs, please cite this repository."
+title: "Hands-On XAI Labs: companion notebooks for Hands-On Explainable AI"
+authors:
+  - family-names: Mohammadi
+    given-names: Hadi
+repository-code: "https://github.com/mohammadi-hadi/hands-on-xai-labs"
+license: MIT
+keywords:
+  - explainable AI
+  - interpretability
+  - large language models
+  - feature attribution
+  - mechanistic interpretability
+  - evaluation
