@@ -5,6 +5,7 @@ authors:
   - family-names: Mohammadi
     given-names: Hadi
 repository-code: "https://github.com/mohammadi-hadi/hands-on-xai-labs"
+doi: 10.5281/zenodo.21804605
 license: MIT
 keywords:
   - explainable AI
