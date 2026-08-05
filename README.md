@@ -4,6 +4,10 @@
 
 Companion notebooks for *Hands-On Explainable AI*, a practical guide to opening up language models: feature attribution, attention analysis, probing, chain-of-thought faithfulness, mechanistic interpretability, and explainability in production. Every chapter ships a runnable lab; every number in the book was produced by the notebooks in this repo.
 
+## Content warning
+
+Chapters 4, 5, 6, and 8 study a hate-speech classifier, and Chapter 10 probes a sentiment model. Their labs load `tweet_eval` (HatEval, SemEval-2019 Task 5, and the sentiment config), publicly distributed research datasets of real tweets. These notebooks display dataset examples verbatim, including slurs, misogyny, and anti-immigrant abuse, in their code cells, saved outputs, and figures. This is a deliberate methodological choice, made in the book and preserved here: sanitizing the text would change what the model sees and make every explanation describe a different input than the one the model classified. The examples appear as data under analysis, not as speech we endorse. All user mentions are anonymized to `@user` by the dataset. Reader discretion is advised when opening the Chapter 4, 5, 6, and 8 notebooks.
+
 ## Notebooks
 
 | Ch. | Notebook | What you build | Requires | Est. free-T4 minutes |
