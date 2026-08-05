@@ -1,0 +1,32 @@
+name: notebooks-smoke
+
+# Weekly canary: catches upstream library/API churn before readers do.
+# Smoke mode swaps in tiny models and tiny data; the mechinterp notebooks
+# (chapter 10) are skipped here because their stack is too heavy for a
+# scheduled runner, and are exercised on release instead.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-${{ runner.os }}
+
+      - name: Install environment
+        run: uv sync --frozen --group llm
+
+      - name: Execute notebooks (smoke mode)
+        run: BOOK_SMOKE=1 .venv/bin/python scripts/run_notebooks.py
