@@ -84,8 +84,26 @@ Notebooks whose dependency group is not installed are skipped, not failed. `VERI
 - **Gemma Scope (optional, Chapter 10)**: one optional cell loads sparse autoencoders for `google/gemma-2-2b`, which is a *gated* model: accept the license on the model page, authenticate with a Hugging Face token (`HF_TOKEN` in Colab), set `RUN_GEMMA = True`, and budget a ~5 GB download. Every required lab uses only ungated models; no token is ever mandatory.
 - Notebooks that download datasets also carry small inline fallbacks, so they stay executable offline (with degraded numbers).
 
+## Citing these labs
+
+If these labs feed into academic work, cite the archived release (the concept DOI always resolves to the latest version; GitHub's "Cite this repository" button gives other formats):
+
+```bibtex
+@software{mohammadi2026handsonxailabs,
+  author = {Mohammadi, Hadi},
+  title  = {Hands-On XAI Labs: companion notebooks for Hands-On Explainable AI},
+  year   = {2026},
+  doi    = {10.5281/zenodo.21804605},
+  url    = {https://github.com/mohammadi-hadi/hands-on-xai-labs}
+}
+```
+
+## About the author
+
+[Hadi Mohammadi](https://mohammadi.cv) ([ORCID 0000-0003-0860-9200](https://orcid.org/0000-0003-0860-9200)) is a PhD candidate in explainable NLP at Utrecht University and a Senior AI & Data Science Expert at AcademicTransfer. These labs are the executable half of his book *Hands-On Explainable AI: Interpreting, Evaluating, and Trusting Large Language Models*; every number the book reports as its own was produced by the notebooks in this repository.
+
 ## License
 
 Code in this repository (notebooks, scripts, configuration) is released under the [MIT License](LICENSE), so you can reuse the lab code freely in your own projects, which is the point of a hands-on book.
 
-The book's manuscript text and illustrations are not part of this repository and remain all rights reserved.
+The book's manuscript text and illustrations are not part of this repository and remain all rights reserved, © 2026 Hadi Mohammadi.

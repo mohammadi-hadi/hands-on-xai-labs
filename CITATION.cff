@@ -4,7 +4,10 @@ title: "Hands-On XAI Labs: companion notebooks for Hands-On Explainable AI"
 authors:
   - family-names: Mohammadi
     given-names: Hadi
+    orcid: "https://orcid.org/0000-0003-0860-9200"
+    affiliation: "Utrecht University"
 repository-code: "https://github.com/mohammadi-hadi/hands-on-xai-labs"
+url: "https://mohammadi.cv"
 doi: 10.5281/zenodo.21804605
 license: MIT
 keywords:

@@ -4,11 +4,13 @@
   "creators": [
     {
       "name": "Mohammadi, Hadi",
-      "affiliation": "Utrecht University"
+      "affiliation": "Utrecht University",
+      "orcid": "0000-0003-0860-9200"
     }
   ],
   "license": "MIT",
   "upload_type": "software",
+  "notes": "Companion repository for the book Hands-On Explainable AI by Hadi Mohammadi (in preparation). Author site: https://mohammadi.cv",
   "keywords": [
     "explainable AI",
     "interpretability",
