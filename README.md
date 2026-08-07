@@ -4,7 +4,7 @@
 
 Companion notebooks for *Hands-On Explainable AI*, a practical guide to opening up language models: feature attribution, attention analysis, probing, chain-of-thought faithfulness, mechanistic interpretability, and explainability in production. Every chapter ships a runnable lab; every number in the book was produced by the notebooks in this repo.
 
-> **Prefer a guided path? Take these labs as a free course.** [Opening the Black Box](https://mohammadi.cv/opening-the-black-box/) is a free, self-paced course built on these notebooks: five days, thirteen labs, with the key result to look for in each. The full instructor-led version runs as a summer school for universities and companies; details at [mohammadi.cv](https://mohammadi.cv).
+> **Prefer a guided path? Take these labs as a free course.** [Opening the Black Box](https://mohammadi.cv/opening-the-black-box/) is a free, self-paced course built on these notebooks: five days, thirteen labs, with the key result to look for in each. The full instructor-led version runs as a summer school for universities and companies; details at [mohammadi.cv](https://mohammadi.cv). Want a zero-install taste first? [Poke the Black Box](https://mohammadi.cv/playground/) runs in your browser: type a sentence, see which words decide it, and try to flip the verdict.
 
 ## Content warning
 
