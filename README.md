@@ -1,6 +1,7 @@
 # Hands-On Explainable AI: Companion Labs
 
 [![DOI](https://zenodo.org/badge/1323781146.svg)](https://zenodo.org/badge/latestdoi/1323781146)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Companion notebooks for *Hands-On Explainable AI*, a practical guide to opening up language models: feature attribution, attention analysis, probing, chain-of-thought faithfulness, mechanistic interpretability, and explainability in production. Every chapter ships a runnable lab; every number in the book was produced by the notebooks in this repo.
 
