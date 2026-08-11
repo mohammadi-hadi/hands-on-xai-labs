@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="images/cover.png" width="300" alt="Hands-On Explainable AI book cover">
+
 # Hands-On Explainable AI: Companion Labs
 
 [![smoke](https://github.com/mohammadi-hadi/hands-on-xai-labs/actions/workflows/smoke.yml/badge.svg)](https://github.com/mohammadi-hadi/hands-on-xai-labs/actions/workflows/smoke.yml)
@@ -20,36 +22,27 @@ Chapters 4, 5, 6, and 8 study a hate-speech classifier, and Chapter 10 probes a 
 
 ## Notebooks
 
-| Ch. | Notebook | What you build | Requires | Est. free-T4 minutes |
-|----:|---|---|---|---|
-| 1 | `ch01-why-explainability.ipynb` | A 30-line "Clever Hans" demo: two 95%-accurate classifiers that collapse to a coin flip under distribution shift, and the one that warned us | core | < 1 |
-| 2 | `ch02-map-of-the-territory.ipynb` | One sentiment prediction from a fine-tuned transformer, explained five different ways | llm | ~5 (measure) |
-| 3 | `ch03-inside-the-transformer.ipynb` | A guided dissection of GPT-2 small: tokenizers, embedding geometry, attention heads, logit lens, residual norms | llm | 2–3 |
-| 4 | `ch04-feature-attribution.ipynb` | A hate-speech classifier that has to show its work: LIME, SHAP, and Integrated Gradients on the same 10 tweets | llm | 5–10 |
-| 5 | `ch05-attention.ipynb` | Attention maps put on trial: aggregation traps, rollout, IG corroboration, head ablation | llm | ~5 |
-| 6 | `ch06-probing-counterfactuals-concepts.ipynb` | Layer-wise probes, greedy counterfactual edits, and a concept direction: three representation-level explanations | llm | 5–10 |
-| 7 | `ch07-build-it-break-it.ipynb` | A transparent AI-generated-text detector, and then the attack that breaks it | llm | ~5 (measure) |
-| 8 | `ch08-evaluating-explanations.ipynb` | Deletion/insertion faithfulness harness with bootstrap CIs, plus an LLM-judge audit that wipes out | llm | 5–10 |
-| 9 | `ch09-cot-faithfulness.ipynb` | A faithfulness test bench for chain-of-thought: truncation, mistake injection, planted hints | llm | 5–10 |
-| 10 | `ch10-mechanistic-interpretability.ipynb` | Induction heads, activation patching, SAE features, and steering on GPT-2 small | mechinterp | 6–9 |
-| 11 | `ch11-auditing-behavior.ipynb` | A miniature cultural-alignment audit: 19 WVS moral items scored two ways across three small models | llm | 3–5 |
-| 12 | `ch12-training-for-explainability.ipynb` | A complete SFT-then-DPO preference-training pipeline that trains silent hint-adoption out of a small model | llm | < 5 |
-| 13 | `ch13-explainability-in-production.ipynb` | A fully instrumented RAG assistant: citation audit, retrieval receipts, attribution-drift monitor | llm | 4–8 |
+| Ch. | Notebook | Colab | What you build | Requires | Est. free-T4 minutes |
+|----:|---|---|---|---|---|
+| 1 | `ch01-why-explainability.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch01-why-explainability.ipynb) | A 30-line "Clever Hans" demo: two 95%-accurate classifiers that collapse to a coin flip under distribution shift, and the one that warned us | core | < 1 |
+| 2 | `ch02-map-of-the-territory.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch02-map-of-the-territory.ipynb) | One sentiment prediction from a fine-tuned transformer, explained five different ways | llm | ~5 |
+| 3 | `ch03-inside-the-transformer.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch03-inside-the-transformer.ipynb) | A guided dissection of GPT-2 small: tokenizers, embedding geometry, attention heads, logit lens, residual norms | llm | 2–3 |
+| 4 | `ch04-feature-attribution.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch04-feature-attribution.ipynb) | A hate-speech classifier that has to show its work: LIME, SHAP, and Integrated Gradients on the same 10 tweets | llm | 5–10 |
+| 5 | `ch05-attention.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch05-attention.ipynb) | Attention maps put on trial: aggregation traps, rollout, IG corroboration, head ablation | llm | ~5 |
+| 6 | `ch06-probing-counterfactuals-concepts.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch06-probing-counterfactuals-concepts.ipynb) | Layer-wise probes, greedy counterfactual edits, and a concept direction: three representation-level explanations | llm | 5–10 |
+| 7 | `ch07-build-it-break-it.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch07-build-it-break-it.ipynb) | A transparent AI-generated-text detector, and then the attack that breaks it | llm | ~5 |
+| 8 | `ch08-evaluating-explanations.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch08-evaluating-explanations.ipynb) | Deletion/insertion faithfulness harness with bootstrap CIs, plus an LLM-judge audit that wipes out | llm | 5–10 |
+| 9 | `ch09-cot-faithfulness.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch09-cot-faithfulness.ipynb) | A faithfulness test bench for chain-of-thought: truncation, mistake injection, planted hints | llm | 5–10 |
+| 10 | `ch10-mechanistic-interpretability.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch10-mechanistic-interpretability.ipynb) | Induction heads, activation patching, SAE features, and steering on GPT-2 small | mechinterp | 6–9 |
+| 11 | `ch11-auditing-behavior.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch11-auditing-behavior.ipynb) | A miniature cultural-alignment audit: 19 WVS moral items scored two ways across three small models | llm | 3–5 |
+| 12 | `ch12-training-for-explainability.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch12-training-for-explainability.ipynb) | A complete SFT-then-DPO preference-training pipeline that trains silent hint-adoption out of a small model | llm | < 5 |
+| 13 | `ch13-explainability-in-production.ipynb` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/ch13-explainability-in-production.ipynb) | A fully instrumented RAG assistant: citation audit, retrieval receipts, attribution-drift monitor | llm | 4–8 |
 
 "Requires" names the dependency group each notebook declares in its metadata (`core` = scikit-learn stack only; `llm` = PyTorch/Transformers stack; `mechinterp` = transformer-lens + sae-lens). All labs fit a free-tier Colab T4 in 20 minutes or less; most run in well under 10.
 
 ## Quickstart: Colab (zero setup)
 
-Every notebook is standalone. Open it in Colab, then choose **Run all** from the **Runtime** menu.
-
-The Colab badges in these notebooks point at this repo's public address,
-`https://github.com/mohammadi-hadi/hands-on-xai-labs`:
-
-```markdown
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mohammadi-hadi/hands-on-xai-labs/blob/main/notebooks/chNN-name.ipynb)
-```
-
-Until this repo is public, the badge link will 404. With the files in hand you can still open any notebook in Colab: **File → Upload notebook**. Every lab is standalone, so upload is all it takes.
+Every notebook is standalone. Click its Colab badge in the table above (the same badge sits at the top of each notebook), then choose **Run all** from the **Runtime** menu.
 
 Each notebook's first code cell pins its own installs. To install everything at once instead, upload `requirements-colab.txt` and run one cell:
 

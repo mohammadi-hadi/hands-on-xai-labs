@@ -296,7 +296,7 @@ Cross-cutting known flakiness (applies to several notebooks):
 ## ch13-explainability-in-production.ipynb
 
 - Requires: llm
-- Expected wall time: **4–8 min** (ledger: ~1.1 GB downloads; ~2,600 generated tokens run on CPU by design; local full run 24.8 s).
+- Expected wall time: **4–8 min** (ledger: ~1.1 GB downloads; ~2,600 generated tokens run on CPU by design; local full run 31.4 s).
 - Key numbers (ledger `ch13-results.md`; greedy but borderline generations may flip ±1
   question on different hardware):
   1. Citation-lab answer accuracy: **0.88 (7/8)** (allow ±1 question, i.e. 0.75–1.00)
