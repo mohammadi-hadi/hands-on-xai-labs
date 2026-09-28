@@ -103,7 +103,7 @@ If these labs feed into academic work, cite the archived release (the concept DO
 
 ## About the author
 
-[Hadi Mohammadi](https://mohammadi.cv) ([ORCID 0000-0003-0860-9200](https://orcid.org/0000-0003-0860-9200)) is a PhD candidate in explainable NLP at Utrecht University and a Senior AI & Data Science Expert at AcademicTransfer. These labs are the executable half of his book *Hands-On Explainable AI: Interpreting, Evaluating, and Trusting Large Language Models*; every number the book reports as its own was produced by the notebooks in this repository.
+[Hadi Mohammadi](https://mohammadi.cv) ([ORCID 0000-0003-0860-9200](https://orcid.org/0000-0003-0860-9200)) holds a PhD in explainable NLP from Utrecht University and is a Senior AI & Data Science Expert at AcademicTransfer. These labs are the executable half of his book *Hands-On Explainable AI: Interpreting, Evaluating, and Trusting Large Language Models*; every number the book reports as its own was produced by the notebooks in this repository.
 
 ## License
 
