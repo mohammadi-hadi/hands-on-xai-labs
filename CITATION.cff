@@ -9,13 +9,9 @@ authors:
 repository-code: "https://github.com/mohammadi-hadi/hands-on-xai-labs"
 url: "https://mohammadi.cv"
 doi: 10.5281/zenodo.21804605
-identifiers:
-  - type: doi
-    value: 10.5281/zenodo.21828826
-    description: "DOI for version 0.1.2"
 license: MIT
-version: 0.1.2
-date-released: "2026-08-06"
+version: 0.1.3
+date-released: "2026-10-04"
 abstract: "Thirteen executed Colab notebooks on interpreting, evaluating and trusting large language models: feature attribution, attention analysis, probing and counterfactuals, explanation-guided attacks, faithfulness evaluation, chain-of-thought faithfulness, and mechanistic interpretability."
 keywords:
   - explainable AI
