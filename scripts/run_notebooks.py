@@ -13,8 +13,8 @@ Env switches:
 Notebooks that need optional dependency groups declare them in metadata:
     nb.metadata["book"]["requires"] = ["llm"]        # or ["mechinterp"]
 When the group's marker module is missing locally, the notebook is SKIPPED
-(CI's default env installs neither group). Weekly CI runs this as the
-API-churn canary.
+(the light dev env installs neither group). A CI job that must not skip
+anything should install the groups and fail on any SKIP line.
 """
 
 import importlib.util
