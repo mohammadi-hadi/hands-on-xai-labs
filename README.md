@@ -80,6 +80,10 @@ Notebooks whose dependency group is not installed are skipped, not failed. `VERI
 | `BOOK_NB_SAVE=1` | Write executed outputs back into the `.ipynb` files |
 | `BOOK_DEVICE` | Force compute device (`cpu`, `mps`, `cuda`); unset = auto-detect |
 
+## Pinned versions and security
+
+`requirements-colab.txt` and `uv.lock` pin the versions the book's numbers were produced with, including `transformers` 4.57 and `datasets` 3.6. Some of these versions have published security advisories. They all need a malicious model, dataset, checkpoint or XML file to be loaded, and the labs only load the public models and datasets named in each notebook. Run the labs in Colab or a fresh virtual environment, and do not point them at models or files from sources you do not trust. The pins move to `transformers` 5 together with the next edition, so the printed numbers and the code stay in step.
+
 ## Data notes
 
 - **`tweet_eval` (config `hate`)**: HatEval, used in Chapters 4–6 and 8. **Content warning:** this is a hate-speech dataset; tweets contain slurs, misogyny, and anti-immigrant abuse, and the notebooks print examples verbatim so the analysis is honest. Chapter 10 also uses `tweet_eval/sentiment`, which includes profanity.
