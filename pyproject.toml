@@ -43,6 +43,10 @@ mechinterp = [
 
 [tool.uv]
 default-groups = ["dev"]
+# blobfile 2.x (pulled in by sae-lens via automated-interpretability) caps
+# filelock below 4; it only uses FileLock/Timeout, which 4.x keeps, and
+# 4.2.1 is the first release with the ReadWriteLock security fixes
+override-dependencies = ["filelock>=4.2.1"]
 
 [tool.ruff]
 line-length = 100
